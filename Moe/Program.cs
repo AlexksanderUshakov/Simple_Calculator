@@ -46,6 +46,8 @@
             {
                 Console.WriteLine("You have entered an invalid value!");
             }
+
+            Console.ReadLine();
         }
     }
 }
