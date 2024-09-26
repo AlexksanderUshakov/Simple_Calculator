@@ -12,3 +12,4 @@ E:\Lessons\All_Project\Moe\Moe\obj\Debug\net8.0\refint\Moe.dll
 E:\Lessons\All_Project\Moe\Moe\obj\Debug\net8.0\Moe.pdb
 E:\Lessons\All_Project\Moe\Moe\obj\Debug\net8.0\Moe.genruntimeconfig.cache
 E:\Lessons\All_Project\Moe\Moe\obj\Debug\net8.0\ref\Moe.dll
+E:\Lessons\All_Project\Moe\Moe\obj\Debug\net8.0\Moe.sourcelink.json
