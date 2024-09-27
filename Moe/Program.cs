@@ -4,52 +4,62 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first value:");
-            int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the second value:");
-            int y = Convert.ToInt32(Console.ReadLine());
+            while (true)
+            {
 
-            Console.WriteLine("What expression do you want to use = +,-,/,* = ?");
+                Console.WriteLine("Enter the first value:");
+                int x = Convert.ToInt32(Console.ReadLine());
 
-            string otvet = Console.ReadLine();
+                Console.WriteLine("Enter the second value:");
+                int y = Convert.ToInt32(Console.ReadLine());
 
-            if (otvet == "+")
-            {
-                int z = x + y;
-                Console.WriteLine($"Answer: {x} + {y} = {z}");
-            }
-            else if (otvet == "-")
-            {
-                int z = x - y;
-                Console.WriteLine($"Answer: {x} - {y} = {z}");
-            }
-            else if (otvet == "*")
-            {
-                int z = x * y;
-                Console.WriteLine($"Answer: {x} * {y} = {z}");
-            }
-            else if (otvet == "/")
-            {
-                try
+                Console.WriteLine("What expression do you want to use = +,-,/,*,^ = ?");
+                string otvet = Console.ReadLine();
+
+                if (otvet == "+")
                 {
-                    int z = x / y;
-                    Console.WriteLine($"Answer: {x} / {y} = {z}");
+                    int z = x + y;
+                    Console.WriteLine($"Answer: {x} + {y} = {z}");
                 }
-                catch (Exception)
+                else if (otvet == "-")
                 {
-
-                    Console.WriteLine("Division by zero is not possible!");
+                    int z = x - y;
+                    Console.WriteLine($"Answer: {x} - {y} = {z}");
                 }
-            }
-            else
-            {
-                Console.WriteLine("You have entered an invalid value!");
+                else if (otvet == "*")
+                {
+                    int z = x * y;
+                    Console.WriteLine($"Answer: {x} * {y} = {z}");
+                }
+                else if (otvet == "/")
+                {
+                    try
+                    {
+                        int z = x / y;
+                        Console.WriteLine($"Answer: {x} / {y} = {z}");
+                    }
+                    catch (Exception)
+                    {
+
+                        Console.WriteLine("Division by zero is not possible!");
+                    }
+                }
+                else if (otvet == "^")
+                {
+                    long z = (long)Math.Pow(x,y);
+                    Console.WriteLine($"Answer: {x} ^ {y}= {z}");
+                }
+                else
+                {
+                    Console.WriteLine("You have entered an invalid value!");
+                }
+
+                Console.ReadLine();
             }
 
-            Console.ReadLine();
-
-            
         }
     }
 }
+
+
