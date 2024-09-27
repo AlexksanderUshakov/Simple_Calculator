@@ -5,10 +5,10 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the first value:");
-            int x = int.Parse(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the second value:");
-            int y = int.Parse(Console.ReadLine());
+            int y = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("What expression do you want to use = +,-,/,* = ?");
 
